@@ -54,6 +54,10 @@ public class BaseUI : MonoBehaviour
 		foreach (Component child in children)
 		{
 			string name = $"{child.gameObject.name}_{child.GetType().Name}";
+			if(components.ContainsKey(name))
+			{
+				continue;
+			}
 			components.Add(name, child);
 		}
 	}
