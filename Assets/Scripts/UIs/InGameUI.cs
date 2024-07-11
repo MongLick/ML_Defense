@@ -25,4 +25,9 @@ public class InGameUI : BaseUI
 	{
 		followOffset = offset;
 	}
+
+	public void CloseUI()
+	{
+		Manager.UI.CloseInGameUI();
+	}
 }
