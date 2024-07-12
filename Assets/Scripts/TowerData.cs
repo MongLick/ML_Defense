@@ -21,5 +21,7 @@ public class TowerData : ScriptableObject
 		public float buildTime;
 		public int buildCost;
 		public int sellCost;
+
+		public float coolTime;
 	}
 }
